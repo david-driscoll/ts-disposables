@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "lint": "tslint 'src/*.ts'",
-    "preinstall": "npm run lint-rules",
     "test": "npm run lint",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
@@ -13,10 +12,17 @@
   },
   "author": "David Driscoll",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "tslint": "^3.13.0",
-    "tslint-microsoft-contrib": "^2.0.8",
+    "tslint-microsoft-contrib": "git://github.com/Microsoft/tslint-microsoft-contrib.git#releases",
     "typescript": "^2.0.0-dev.20160707"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-driscoll/ts-disposables.git"
+  },
+  "bugs": {
+    "url": "https://github.com/david-driscoll/ts-disposables/issues"
+  },
+  "homepage": "https://github.com/david-driscoll/ts-disposables#readme"
 }
