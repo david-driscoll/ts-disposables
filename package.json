@@ -3,6 +3,7 @@
   "version": "2.0.1",
   "description": "C# like disposables for holding disposable resource callbacks",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "lint": "tslint 'src/*.ts'",
     "test": "npm run lint",
