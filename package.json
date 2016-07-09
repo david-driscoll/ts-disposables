@@ -1,0 +1,23 @@
+{
+  "name": "ts-disposables",
+  "version": "1.0.0",
+  "description": "C# like disposables for holding disposable resource callbacks",
+  "main": "index.js",
+  "scripts": {
+    "lint-rules": "tsc -p rules/tsconfig.json",
+    "lint": "npm run rules && tslint '*.ts'",
+    "preinstall": "npm run lint-rules",
+    "test": "npm run lint",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "prepublish": "npm run lint && npm run tsc"
+  },
+  "author": "David Driscoll",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "^3.13.0",
+    "tslint-microsoft-contrib": "^2.0.8",
+    "typescript": "^2.0.0-dev.20160707"
+  }
+}
