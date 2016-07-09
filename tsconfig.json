@@ -9,7 +9,6 @@
         "moduleResolution": "node",
         "diagnostics": true,
         "noEmitOnError": false,
-        "declarationDir": "dist",
         "preserveConstEnums": true,
         "noImplicitAny": true,
         "noImplicitThis": true,
