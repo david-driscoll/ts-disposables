@@ -1,6 +1,6 @@
 {
   "name": "ts-disposables",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "C# like disposables for holding disposable resource callbacks",
   "main": "src/index.js",
   "typings": "src/index.ts",
