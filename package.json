@@ -4,8 +4,7 @@
   "description": "C# like disposables for holding disposable resource callbacks",
   "main": "index.js",
   "scripts": {
-    "lint-rules": "tsc -p rules/tsconfig.json",
-    "lint": "npm run rules && tslint '*.ts'",
+    "lint": "tslint 'src/*.ts'",
     "preinstall": "npm run lint-rules",
     "test": "npm run lint",
     "tsc": "tsc",
