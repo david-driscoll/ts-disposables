@@ -5,11 +5,12 @@
             "es5",
             "es2015.collection"
         ],
-        "module": "commonjs",
-        "moduleResolution": "node",
+        "module": "umd",
         "diagnostics": true,
         "noEmitOnError": false,
         "preserveConstEnums": true,
+        "outDir": "dist",
+        "declaration": true,
         "noImplicitAny": true,
         "noImplicitThis": true,
         "noImplicitReturns": true,
@@ -25,8 +26,6 @@
     "exclude": [
         "node_modules",
         "rules",
-        "jspm_packages",
-        "typings/main.d.ts",
-        "typings/main"
+        "dist"
     ]
 }
