@@ -9,6 +9,18 @@ export interface ISubscription {
     unsubscribe(): void;
 }
 
+export function isDisposable(value: any): value is IDisposable {
+    return !!value.dispose;
+}
+
+export function isSubscription(value: any): value is ISubscription {
+    return !!value.unsubscribe;
+}
+
+export function canBeDisposed(value: any): value is IDisposableOrSubscription {
+    return !!(value.dispose || value.unsubscribe) || typeof value === 'function';
+}
+
 export type IDisposableOrSubscription = IDisposable | ISubscription | (() => void);
 let empty: Disposable;
 
