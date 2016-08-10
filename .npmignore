@@ -39,4 +39,3 @@ jspm_packages
 tslint.json
 tsconfig.json
 .editorconfig
-src/

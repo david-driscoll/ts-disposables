@@ -10,7 +10,7 @@
         "noEmitOnError": false,
         "preserveConstEnums": true,
         "outDir": "dist",
-        "declaration": true,
+        "declaration": false,
         "noImplicitAny": true,
         "noImplicitThis": true,
         "noImplicitReturns": true,
